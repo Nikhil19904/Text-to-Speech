@@ -1,0 +1,153 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F7FC; /* Light background color */
+    color: #333333; /* Dark gray text for good contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container to center content and add spacing */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4A90E2; /* Primary blue for header */
+}
+
+/* Textarea for input */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: #F7F8FA; /* Light background for text area */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    transition: border 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #50C4B6; /* Teal focus border */
+    outline: none;
+}
+
+/* Label styling */
+label {
+    font-size: 1rem;
+    margin-top: 15px;
+    display: block;
+    text-align: left;
+    color: #666; /* Soft gray for labels */
+    font-weight: 600;
+}
+
+/* Select dropdown */
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #F7F8FA; /* Light background for dropdown */
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+}
+
+select:focus {
+    border-color: #50C4B6; /* Teal focus border */
+    outline: none;
+}
+
+/* Range sliders */
+input[type="range"] {
+    width: 100%;
+    margin: 15px 0;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: #ddd; /* Neutral gray for sliders */
+    transition: background 0.3s ease-in-out;
+}
+
+input[type="range"]:focus {
+    background: #4A90E2; /* Blue for focused sliders */
+}
+
+/* Span to display rate and pitch values */
+span {
+    font-size: 1rem;
+    margin-left: 10px;
+    color: #4A90E2; /* Blue text for rate and pitch value */
+}
+
+/* Button styles */
+button {
+    background-color: #4A90E2; /* Primary blue for buttons */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #357AB7; /* Slightly darker blue on hover */
+}
+
+button:disabled {
+    background-color: #d1e0e8;
+    cursor: not-allowed;
+}
+
+/* Focused Button with a subtle purple border */
+button:focus {
+    border: 2px solid #9B87F6; /* Soft lavender border on focus */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

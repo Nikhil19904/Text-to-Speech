@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech Converter</h1>
+        <textarea id="text-input" placeholder="Enter text here"></textarea>
+        <br>
+        <label for="voice-select">Select Voice:</label>
+        <select id="voice-select"></select>
+        <br>
+        <label for="language-select">Select Language:</label>
+        <select id="language-select">
+            <option value="en-US">English (US)</option>
+            <option value="en-GB">English (UK)</option>
+            <option value="fr-FR">French</option>
+            <option value="es-ES">Spanish</option>
+            <!-- Add more languages here -->
+        </select>
+        <br>
+        <label for="rate">Rate (Speed):</label>
+        <input type="range" id="rate" min="0.1" max="2" step="0.1" value="1">
+        <span id="rate-value">1</span>
+        <br>
+        <label for="pitch">Pitch:</label>
+        <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+        <span id="pitch-value">1</span>
+        <br>
+        <button id="speak-btn">Speak</button>
+        <button id="stop-btn">Stop</button>
+        <button id="reset-btn">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
